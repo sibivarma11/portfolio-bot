@@ -1,5 +1,8 @@
 const router = require('express').Router();
 
+router.get('/test', (req, res) => {
+  res.send('Hello World!');
+});
 // Basic chatbot route
 router.post('/chat', async (req, res) => {
   try {
